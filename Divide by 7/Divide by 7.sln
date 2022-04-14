@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32210.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divide by 7", "Divide by 7\Divide by 7.csproj", "{6FB3F829-7BD7-488F-A340-DA5AEEFCD2D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FB3F829-7BD7-488F-A340-DA5AEEFCD2D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB3F829-7BD7-488F-A340-DA5AEEFCD2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB3F829-7BD7-488F-A340-DA5AEEFCD2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB3F829-7BD7-488F-A340-DA5AEEFCD2D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62C260B3-0459-4F1A-A780-230A77696D87}
+	EndGlobalSection
+EndGlobal

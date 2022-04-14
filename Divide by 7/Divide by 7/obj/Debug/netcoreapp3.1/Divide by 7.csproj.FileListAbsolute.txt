@@ -1,0 +1,14 @@
+C:\Users\f\source\repos\Divide by 7\Divide by 7\bin\Debug\netcoreapp3.1\Divide by 7.exe
+C:\Users\f\source\repos\Divide by 7\Divide by 7\bin\Debug\netcoreapp3.1\Divide by 7.deps.json
+C:\Users\f\source\repos\Divide by 7\Divide by 7\bin\Debug\netcoreapp3.1\Divide by 7.runtimeconfig.json
+C:\Users\f\source\repos\Divide by 7\Divide by 7\bin\Debug\netcoreapp3.1\Divide by 7.runtimeconfig.dev.json
+C:\Users\f\source\repos\Divide by 7\Divide by 7\bin\Debug\netcoreapp3.1\Divide by 7.dll
+C:\Users\f\source\repos\Divide by 7\Divide by 7\bin\Debug\netcoreapp3.1\Divide by 7.pdb
+C:\Users\f\source\repos\Divide by 7\Divide by 7\obj\Debug\netcoreapp3.1\Divide by 7.csproj.AssemblyReference.cache
+C:\Users\f\source\repos\Divide by 7\Divide by 7\obj\Debug\netcoreapp3.1\Divide by 7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\f\source\repos\Divide by 7\Divide by 7\obj\Debug\netcoreapp3.1\Divide by 7.AssemblyInfoInputs.cache
+C:\Users\f\source\repos\Divide by 7\Divide by 7\obj\Debug\netcoreapp3.1\Divide by 7.AssemblyInfo.cs
+C:\Users\f\source\repos\Divide by 7\Divide by 7\obj\Debug\netcoreapp3.1\Divide by 7.csproj.CoreCompileInputs.cache
+C:\Users\f\source\repos\Divide by 7\Divide by 7\obj\Debug\netcoreapp3.1\Divide by 7.dll
+C:\Users\f\source\repos\Divide by 7\Divide by 7\obj\Debug\netcoreapp3.1\Divide by 7.pdb
+C:\Users\f\source\repos\Divide by 7\Divide by 7\obj\Debug\netcoreapp3.1\Divide by 7.genruntimeconfig.cache
