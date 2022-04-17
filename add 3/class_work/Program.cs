@@ -8,15 +8,15 @@ namespace class_work
         {
             // Natural ededin evveline 3 kecirib yeni eded duzelden bir method yazin          Example: 529 => 3529
             //"3" + 529 => qadagandir
-            Console.WriteLine("Enter Number");
-            int num =Convert.ToInt32(Console.ReadLine());
-            newNum(num);
+            Console.Write("Enter one Number:");
+            int number =Convert.ToInt32(Console.ReadLine());
+            newNum(number);
 
         }
-        public static void newNum(int num)
+        public static void newNum(int number)
         {
             int count = 0;
-            int clone = num;
+            int clone = number;
             
             while (clone>0)
             {
@@ -30,8 +30,8 @@ namespace class_work
             {
                 rank = rank * 10;
             }
-            int newnumber = 3 * rank + num;
-            Console.WriteLine(newnumber);
+            int newNumber = 3 * rank + number;
+            Console.WriteLine("New number:" + newNumber);
         }
         
         
