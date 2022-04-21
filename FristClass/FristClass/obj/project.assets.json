@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\f\\source\\repos\\FristClass\\FristClass\\FristClass.csproj",
+      "projectUniqueName": "C:\\Users\\f\\source\\repos\\hometask\\FristClass\\FristClass\\FristClass.csproj",
       "projectName": "FristClass",
-      "projectPath": "C:\\Users\\f\\source\\repos\\FristClass\\FristClass\\FristClass.csproj",
+      "projectPath": "C:\\Users\\f\\source\\repos\\hometask\\FristClass\\FristClass\\FristClass.csproj",
       "packagesPath": "C:\\Users\\f\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\f\\source\\repos\\FristClass\\FristClass\\obj\\",
+      "outputPath": "C:\\Users\\f\\source\\repos\\hometask\\FristClass\\FristClass\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

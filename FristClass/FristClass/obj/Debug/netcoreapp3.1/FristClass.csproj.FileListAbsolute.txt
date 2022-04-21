@@ -12,3 +12,17 @@ C:\Users\f\source\repos\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass
 C:\Users\f\source\repos\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.dll
 C:\Users\f\source\repos\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.pdb
 C:\Users\f\source\repos\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.genruntimeconfig.cache
+C:\Users\f\source\repos\hometask\FristClass\FristClass\bin\Debug\netcoreapp3.1\FristClass.exe
+C:\Users\f\source\repos\hometask\FristClass\FristClass\bin\Debug\netcoreapp3.1\FristClass.deps.json
+C:\Users\f\source\repos\hometask\FristClass\FristClass\bin\Debug\netcoreapp3.1\FristClass.runtimeconfig.json
+C:\Users\f\source\repos\hometask\FristClass\FristClass\bin\Debug\netcoreapp3.1\FristClass.runtimeconfig.dev.json
+C:\Users\f\source\repos\hometask\FristClass\FristClass\bin\Debug\netcoreapp3.1\FristClass.dll
+C:\Users\f\source\repos\hometask\FristClass\FristClass\bin\Debug\netcoreapp3.1\FristClass.pdb
+C:\Users\f\source\repos\hometask\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.csproj.AssemblyReference.cache
+C:\Users\f\source\repos\hometask\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\f\source\repos\hometask\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.AssemblyInfoInputs.cache
+C:\Users\f\source\repos\hometask\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.AssemblyInfo.cs
+C:\Users\f\source\repos\hometask\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.csproj.CoreCompileInputs.cache
+C:\Users\f\source\repos\hometask\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.dll
+C:\Users\f\source\repos\hometask\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.pdb
+C:\Users\f\source\repos\hometask\FristClass\FristClass\obj\Debug\netcoreapp3.1\FristClass.genruntimeconfig.cache

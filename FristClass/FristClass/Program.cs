@@ -41,22 +41,29 @@ namespace FristClass
 
             if (IsGraduent==true)
             {
+                
                 Console.WriteLine("This student is graduet");
                 
+
             }
             else if (Point>80)
             {
+                
                 Console.WriteLine("This student is not graduet");
                 Console.WriteLine("You can take the second exam");
+                
             }
             else
             {
+                
                 Console.WriteLine("This student is not graduet");
                 Console.WriteLine("You can not take the second exam");
-            }  
-            
-            
+                
+            }
             return $"Name: {Name} Surname: {Surname} Group: {Group} Point: {Point} \n";
+
+
+            
         }
             
             

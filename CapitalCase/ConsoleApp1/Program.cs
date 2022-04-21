@@ -11,27 +11,30 @@ namespace ConsoleApp1
         {
 
             Console.Write("Enter some words:");
-            string word = Console.ReadLine();
-            string LowerWord = word.ToLower();
-            string [] arr = LowerWord.Split();
+            string str = Console.ReadLine();
+            string LowerWord = str.ToLower();
+            string [] words = LowerWord.Split();
+            string newWord = "";
 
-            for (int i = 0; i < arr.Length; i++)
+            foreach (string word in words)
             {
-                string clone = arr[i];
-                string newclone=clone.Substring(0,1).ToUpper()+clone.Substring(1);
-                arr[i] = newclone;
-                
-            } 
-             string UpperCase =string.Join(" ", arr);
-             Console.WriteLine(UpperCase);   
+                newWord += word[0].ToString().ToUpper() + word.Substring(1) + " ";
+            }
 
-            
-            
+            Console.WriteLine(newWord);
 
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    string clone = arr[i];
+            //    string newclone = clone.Substring(0, 1).ToUpper() + clone.Substring(1);
+            //    arr[i] = newclone;
 
+            //}
+            //string UpperCase =string.Join(" ", arr);
+            // Console.WriteLine(UpperCase);   
 
-
-
+         
+          
 
 
         }
