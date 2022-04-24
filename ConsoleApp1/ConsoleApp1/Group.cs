@@ -2,41 +2,44 @@
 
 namespace ConsoleApp1
 {
-    internal class Group : Student
+    internal class Group
     {
-        public string No;
-        public int Limit;
-        public string[] Student;
+        public string No { get; set; }
+        public int Limit { get; set; }
+        public string[] Students;
 
-       
 
-        public Group(string name, string surname, string no, int limit, string[] student) : base(name, surname)
+
+        public Group(string no, int limit, string[] students)
         {
+
             No = no;
             Limit = limit;
-            Student = student;
+            Students = students;
         }
-        
-        public string[] AddStudent()
+        Student students;   
+        int i = 0;
+       
+        public void AddStudent(Student student)
         {
 
-            string[] students = new string[Limit];
-            for (int i = 0; i < Limit; i++)
-            {
-                students[i] = Fullname();
-            }
-            return students;
-
-
+            Students[i] = student.Fullname();
+            i++;
+           
         }
         
        
         public void GetStudents()
         {
-            string[] arr = AddStudent();
+            Console.WriteLine();
+            Console.WriteLine("********************************************************************");
+            Console.WriteLine($"Group Number:{No}");
+            Console.WriteLine($"Group Limit{Limit}");
+            Console.WriteLine();
             for (int i = 0; i < Limit; i++)
             {
-                Console.WriteLine(arr[i]);
+                
+                Console.WriteLine((i+1)+".Student:"+Students[i]);
             }
 
         }

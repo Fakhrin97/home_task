@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConsoleApp1
+﻿namespace ConsoleApp1
 {
     internal class Student
     {
-        public string Name;
-        public string Surname;
-        public Student(string name,string surname)
+        public string Name { get; set; }
+
+
+        public string Surname { get; set; }
+        public Student(string name, string surname)
         {
             Name = name;
-            Surname = surname;  
+            Surname = surname;
         }
-        protected string Fullname()
+        public string Fullname()
         {
-            string fullname = Name +" "+ Surname;
+            string fullname = Name + " " + Surname;
             return fullname;
         }
     }
