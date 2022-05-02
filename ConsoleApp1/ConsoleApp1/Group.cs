@@ -17,13 +17,13 @@ namespace ConsoleApp1
             Limit = limit;
             Students = students;
         }
-        Student students;   
+        Student student;   
         int i = 0;
        
         public void AddStudent(Student student)
         {
 
-            Students[i] = student.Fullname();
+            Students[i] = student.fullname;
             i++;
            
         }

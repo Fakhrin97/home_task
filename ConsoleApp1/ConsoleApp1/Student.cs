@@ -11,10 +11,19 @@
             Name = name;
             Surname = surname;
         }
-        public string Fullname()
+        private string Fullname()
         {
             string fullname = Name + " " + Surname;
             return fullname;
+        }
+        public string fullname { 
+            get
+            {
+                return Fullname();  
+            } set
+            {
+                fullname = Fullname();
+            }
         }
     }
 }
