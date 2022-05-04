@@ -13,10 +13,9 @@ namespace MilkSell
             Console.Write("Mehsulun Sayini Qeyd Edin:");
             byte count = Convert.ToByte(Console.ReadLine());
             Console.WriteLine();
-
-           
+                      
             Milk milk = new Milk(name, count);
-
+            
             bool resalt = false;
 
             while (!resalt)

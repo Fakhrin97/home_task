@@ -21,23 +21,8 @@
             Income = 0;
         }
 
-        public void Sell()
-        {
-
-            if (Count > 0)
-            {
-                Income += Price;
-                System.Console.WriteLine($"Income:{Income} Azn.Qalan Mehsulun Sayi {Count - 1} ededir.");
-                System.Console.WriteLine();
-                Count--;
-            }
-            else
-            {
-                System.Console.WriteLine($"Mehsul artiq Bitib.Umumi Gelir:{Totalincome} Azn");
-                System.Console.WriteLine();
-            }
-
-        }
+        public abstract void Sell();
+        
 
 
     }
