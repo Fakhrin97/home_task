@@ -17,7 +17,6 @@
             else
             {
                 return ($"Brend:{Brend} Model:{Model} Color:{Color} Max Speed:{MaxSpeed} Passenger Count:{PassengerCount} ");
-
             }
            
 
