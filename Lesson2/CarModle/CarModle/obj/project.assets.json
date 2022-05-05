@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\f\\source\\repos\\CarModle\\CarModle\\CarModle.csproj",
+      "projectUniqueName": "C:\\Users\\f\\source\\repos\\HomeTask\\Lesson2\\CarModle\\CarModle\\CarModle.csproj",
       "projectName": "CarModle",
-      "projectPath": "C:\\Users\\f\\source\\repos\\CarModle\\CarModle\\CarModle.csproj",
+      "projectPath": "C:\\Users\\f\\source\\repos\\HomeTask\\Lesson2\\CarModle\\CarModle\\CarModle.csproj",
       "packagesPath": "C:\\Users\\f\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\f\\source\\repos\\CarModle\\CarModle\\obj\\",
+      "outputPath": "C:\\Users\\f\\source\\repos\\HomeTask\\Lesson2\\CarModle\\CarModle\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -21,8 +21,7 @@
             Income = 0;
         }
 
-        public abstract void Sell();
-        
+        public abstract void Sell();       
 
 
     }

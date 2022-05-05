@@ -10,8 +10,16 @@
 
         public override string getInformation()
         {
+            if (Brend == null && Model == null)
+            {
+               return "Bu method yardila bilmez";
+            }
+            else
+            {
+                return ($"Brend:{Brend} Model:{Model} Color:{Color} Max Speed:{MaxSpeed} Passenger Count:{PassengerCount} ");
 
-            return ($"Brend:{Brend} Model:{Model} Color:{Color} Max Speed:{MaxSpeed} Passenger Count:{PassengerCount} ");
+            }
+           
 
         }
     }

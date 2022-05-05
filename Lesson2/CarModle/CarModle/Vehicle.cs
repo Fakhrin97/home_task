@@ -14,8 +14,12 @@ namespace CarModle
         }
         public Vehicle(string brend, string model) : this()
         {
-            Brend = brend;
-            Model = model;
+            if (!string.IsNullOrEmpty(brend) && !string.IsNullOrEmpty(model))
+            {
+                Brend = brend;
+                Model = model;
+            }
+            
         }
         public Vehicle(string brend, string model, string color, short maxspeed) : this(brend, model)
         {
@@ -23,14 +27,11 @@ namespace CarModle
             {
                 Color = color;
                 MaxSpeed = maxspeed;
-            }
-            else
-            {
-                Console.WriteLine("Car yardila bilmedi.");
-            }
+            }            
         }
         public abstract string getInformation();
         
 
     }
+    
 }

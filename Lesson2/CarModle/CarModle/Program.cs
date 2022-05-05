@@ -6,6 +6,13 @@ namespace CarModle
     {
         static void Main(string[] args)
         {
+            Bus bus =createBus();
+            Console.WriteLine(bus.getInformation());
+
+
+        }
+        public static Bus createBus()
+        {
             Console.Write("Enter car's Brend:");
             string brend = Console.ReadLine();
 
@@ -16,27 +23,27 @@ namespace CarModle
             string color = Console.ReadLine();
 
             bool resalt = false;
-            short maxspeed=0;
+            short maxspeed = 0;
             while (!resalt)
             {
                 Console.Write("Enter Max Speed:");
                 resalt = short.TryParse(Console.ReadLine(), out maxspeed);
-                if (resalt == false) Console.WriteLine("Enter Correct Variant");             
-                
+                if (resalt == false) Console.WriteLine("Enter Correct Variant");
+
             }
 
             resalt = false;
             byte pasenger = 0;
 
             while (!resalt)
-            {                
+            {
                 Console.Write("Enter Passenger Count:");
                 resalt = byte.TryParse(Console.ReadLine(), out pasenger);
                 if (resalt == false) Console.WriteLine("Enter Correct Variant");
             }
 
             Bus bus = new Bus(brend, model, color, maxspeed, pasenger);
-            Console.WriteLine(bus.getInformation());
+            return bus;
 
         }
     }

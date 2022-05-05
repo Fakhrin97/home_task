@@ -12,3 +12,17 @@ C:\Users\f\source\repos\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.cspro
 C:\Users\f\source\repos\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.dll
 C:\Users\f\source\repos\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.pdb
 C:\Users\f\source\repos\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.genruntimeconfig.cache
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\bin\Debug\netcoreapp3.1\CarModle.exe
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\bin\Debug\netcoreapp3.1\CarModle.deps.json
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\bin\Debug\netcoreapp3.1\CarModle.runtimeconfig.json
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\bin\Debug\netcoreapp3.1\CarModle.runtimeconfig.dev.json
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\bin\Debug\netcoreapp3.1\CarModle.dll
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\bin\Debug\netcoreapp3.1\CarModle.pdb
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.csproj.AssemblyReference.cache
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.AssemblyInfoInputs.cache
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.AssemblyInfo.cs
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.csproj.CoreCompileInputs.cache
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.dll
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.pdb
+C:\Users\f\source\repos\HomeTask\Lesson2\CarModle\CarModle\obj\Debug\netcoreapp3.1\CarModle.genruntimeconfig.cache
