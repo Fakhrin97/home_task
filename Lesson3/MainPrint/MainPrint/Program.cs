@@ -6,47 +6,37 @@ namespace MainPrint
     {
         static void Main(string[] args)
         {
+            Menu();
+        }
+        public static void Menu()
+        {
             Console.WriteLine("1.Print Pdf");
             Console.WriteLine("2.Print Word");
             Console.WriteLine("3.Print Excel");
             byte selection = Convert.ToByte(Console.ReadLine());
-            if (selection==1)
+            if (selection == 1)
             {
-                MainPrintFile mainprintformat = new Pdf();
-                if (mainprintformat is IPrintable)
-                {
-                    IPrintable printable = (IPrintable)mainprintformat;
-                    mainprintformat.PrintFile(printable);
-                }
+                Print(new Pdf());
             }
             else if (selection == 2)
             {
-                MainPrintFile mainprintformat = new Word();
-                if (mainprintformat is IPrintable)
-                {
-                    IPrintable printable = (IPrintable)mainprintformat;
-                    mainprintformat.PrintFile(printable);
-                }
-                
-                
+                Print(new Word());
             }
             else if (selection == 3)
             {
-                MainPrintFile mainprintformat = new Excel();
-                if (mainprintformat is IPrintable)
-                {
-                    IPrintable printable = (IPrintable)mainprintformat;
-                    mainprintformat.PrintFile(printable);
-                }
-                
+                Print(new Excel());
             }
 
-
-
-
-
-
-
         }
+        public static void Print(MainPrintFile MainPrint)
+        {
+            if (MainPrint is IPrintable)
+            {
+                IPrintable printable = (IPrintable)MainPrint;
+                MainPrint.PrintFile(printable);
+            }
+        }
+
     }
 }
+
