@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\f\\source\\repos\\MainPrint\\MainPrint\\MainPrint.csproj": {}
+    "C:\\Users\\f\\source\\repos\\HomeTask\\Lesson3\\MainPrint\\MainPrint\\MainPrint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\f\\source\\repos\\MainPrint\\MainPrint\\MainPrint.csproj": {
+    "C:\\Users\\f\\source\\repos\\HomeTask\\Lesson3\\MainPrint\\MainPrint\\MainPrint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\f\\source\\repos\\MainPrint\\MainPrint\\MainPrint.csproj",
+        "projectUniqueName": "C:\\Users\\f\\source\\repos\\HomeTask\\Lesson3\\MainPrint\\MainPrint\\MainPrint.csproj",
         "projectName": "MainPrint",
-        "projectPath": "C:\\Users\\f\\source\\repos\\MainPrint\\MainPrint\\MainPrint.csproj",
+        "projectPath": "C:\\Users\\f\\source\\repos\\HomeTask\\Lesson3\\MainPrint\\MainPrint\\MainPrint.csproj",
         "packagesPath": "C:\\Users\\f\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\f\\source\\repos\\MainPrint\\MainPrint\\obj\\",
+        "outputPath": "C:\\Users\\f\\source\\repos\\HomeTask\\Lesson3\\MainPrint\\MainPrint\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

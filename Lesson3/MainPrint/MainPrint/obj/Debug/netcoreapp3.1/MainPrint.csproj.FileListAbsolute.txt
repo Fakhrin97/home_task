@@ -12,3 +12,17 @@ C:\Users\f\source\repos\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.cs
 C:\Users\f\source\repos\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.dll
 C:\Users\f\source\repos\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.pdb
 C:\Users\f\source\repos\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.genruntimeconfig.cache
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.csproj.AssemblyReference.cache
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.AssemblyInfoInputs.cache
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.AssemblyInfo.cs
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.csproj.CoreCompileInputs.cache
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.dll
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.pdb
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\bin\Debug\netcoreapp3.1\MainPrint.exe
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\bin\Debug\netcoreapp3.1\MainPrint.deps.json
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\bin\Debug\netcoreapp3.1\MainPrint.runtimeconfig.json
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\bin\Debug\netcoreapp3.1\MainPrint.runtimeconfig.dev.json
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\bin\Debug\netcoreapp3.1\MainPrint.dll
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\bin\Debug\netcoreapp3.1\MainPrint.pdb
+C:\Users\f\source\repos\HomeTask\Lesson3\MainPrint\MainPrint\obj\Debug\netcoreapp3.1\MainPrint.genruntimeconfig.cache

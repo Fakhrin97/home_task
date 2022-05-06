@@ -6,11 +6,7 @@ namespace MainPrint
 {
     internal abstract class MainPrintFile
     {
-        public string File;
-        public MainPrintFile(string file)
-        {
-            File = file;
-        }
-        public abstract void PrintFile();
+        
+        public abstract void PrintFile(IPrintable printable);
     }
 }

@@ -4,15 +4,17 @@ using System.Text;
 
 namespace MainPrint
 {
-    internal class Excel : MainPrintFile
+    internal class Excel : MainPrintFile,IPrintable
     {
-        public Excel(string file) : base(file)
+        
+        public override void PrintFile(IPrintable printable)
         {
-        }
+            printable.Print();
+        }       
 
-        public override void PrintFile()
+        void IPrintable.Print()
         {
-            Console.WriteLine(File);
+            Console.WriteLine("Print Excel Format");
         }
     }
 }

@@ -4,16 +4,18 @@ using System.Text;
 
 namespace MainPrint
 {
-    internal class Word : MainPrintFile
+    internal class Word : MainPrintFile,IPrintable
     {
-        public Word(string file) : base(file)
+       
+
+        public override void PrintFile(IPrintable printable)
         {
+            printable.Print();
         }
 
-        public override void PrintFile()
+        void IPrintable.Print()
         {
-            Console.WriteLine(File);
+            Console.WriteLine("Print Word Format");
         }
-
     }
 }

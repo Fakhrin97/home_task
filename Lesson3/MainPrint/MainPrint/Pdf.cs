@@ -4,15 +4,18 @@ using System.Text;
 
 namespace MainPrint
 {
-    internal class Pdf : MainPrintFile
+    internal class Pdf : MainPrintFile,IPrintable
     {
-        public Pdf(string file) : base(file)
-        {
-        }
+        
 
-        public override void PrintFile()
+        public override void PrintFile(IPrintable printable)
         {
-            Console.WriteLine(File);
+            printable.Print();
+        }             
+
+        void IPrintable.Print()
+        {
+            Console.WriteLine("Print Pdf Format");
         }
     }
 }
