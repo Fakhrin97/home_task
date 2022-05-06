@@ -13,21 +13,32 @@ namespace MainPrint
             if (selection==1)
             {
                 MainPrintFile mainprintformat = new Pdf();
-                IPrintable printable = (IPrintable)mainprintformat;
-                mainprintformat.PrintFile(printable);                   
+                if (mainprintformat is IPrintable)
+                {
+                    IPrintable printable = (IPrintable)mainprintformat;
+                    mainprintformat.PrintFile(printable);
+                }
             }
             else if (selection == 2)
             {
                 MainPrintFile mainprintformat = new Word();
-                IPrintable printable = (IPrintable)mainprintformat;
-                mainprintformat.PrintFile(printable);
+                if (mainprintformat is IPrintable)
+                {
+                    IPrintable printable = (IPrintable)mainprintformat;
+                    mainprintformat.PrintFile(printable);
+                }
+                
                 
             }
             else if (selection == 3)
             {
                 MainPrintFile mainprintformat = new Excel();
-                IPrintable printable = (IPrintable)mainprintformat;
-                mainprintformat.PrintFile(printable);
+                if (mainprintformat is IPrintable)
+                {
+                    IPrintable printable = (IPrintable)mainprintformat;
+                    mainprintformat.PrintFile(printable);
+                }
+                
             }
 
 

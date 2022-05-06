@@ -10,7 +10,7 @@ namespace MainPrint
         public override void PrintFile(IPrintable printable)
         {
             printable.Print();
-        }       
+        }
 
         void IPrintable.Print()
         {
