@@ -4,14 +4,11 @@ using System.Text;
 
 namespace MainPrint
 {
-    internal class Word : MainPrintFile,IPrintable
+    internal class Word : IPrintable
     {
        
 
-        public override void PrintFile(IPrintable printable)
-        {
-            printable.Print();
-        }
+        
 
         void IPrintable.Print()
         {

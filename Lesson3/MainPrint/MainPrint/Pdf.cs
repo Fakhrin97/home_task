@@ -4,14 +4,10 @@ using System.Text;
 
 namespace MainPrint
 {
-    internal class Pdf : MainPrintFile,IPrintable
+    internal class Pdf : IPrintable
     {
         
-
-        public override void PrintFile(IPrintable printable)
-        {
-            printable.Print();
-        }             
+         
 
         void IPrintable.Print()
         {

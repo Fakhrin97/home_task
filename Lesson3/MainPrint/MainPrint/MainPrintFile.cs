@@ -4,9 +4,12 @@ using System.Text;
 
 namespace MainPrint
 {
-    internal abstract class MainPrintFile
+    internal  class MainPrintFile
     {
-        
-        public abstract void PrintFile(IPrintable printable);
+
+        public MainPrintFile(IPrintable print)
+        {
+            print.Print();
+        }
     }
 }
