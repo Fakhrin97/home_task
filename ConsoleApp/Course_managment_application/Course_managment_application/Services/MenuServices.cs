@@ -12,17 +12,17 @@ namespace Course_managment_application.Services
         public static void CreateGroupMenu()
         {
             Console.WriteLine("Your Course Online or Ofline? T/F");
-            char online;
+            string online;
             bool isOnline = false;
             do
             {
-                online = Convert.ToChar(Console.ReadLine());
-                if (online == 'T')
-                {
-                    isOnline = true;
-                }
+                Console.WriteLine("Choose one => T or F");
+                online = Console.ReadLine().ToUpper();
+                
 
-            } while (!isOnline && online == 'T' && online == 'F');
+            } while (online!="F" && online!="T");
+            if (online=="F")isOnline = true;
+            
 
 
             foreach (var item in System.Enum.GetValues(typeof(Categories)))
@@ -31,6 +31,7 @@ namespace Course_managment_application.Services
             }
             object categories;
             bool isCategory = System.Enum.TryParse(typeof(Categories), Console.ReadLine(), out categories);
+            Console.WriteLine(isCategory);
             
             courseServices.CreateGroup(isOnline, (Categories)categories);
         }

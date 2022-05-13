@@ -12,3 +12,17 @@ C:\Users\f\source\repos\Course_managment_application\Course_managment_applicatio
 C:\Users\f\source\repos\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.dll
 C:\Users\f\source\repos\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.pdb
 C:\Users\f\source\repos\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.genruntimeconfig.cache
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\bin\Debug\netcoreapp3.1\Course_managment_application.exe
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\bin\Debug\netcoreapp3.1\Course_managment_application.deps.json
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\bin\Debug\netcoreapp3.1\Course_managment_application.runtimeconfig.json
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\bin\Debug\netcoreapp3.1\Course_managment_application.runtimeconfig.dev.json
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\bin\Debug\netcoreapp3.1\Course_managment_application.dll
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\bin\Debug\netcoreapp3.1\Course_managment_application.pdb
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.csproj.AssemblyReference.cache
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.AssemblyInfoInputs.cache
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.AssemblyInfo.cs
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.csproj.CoreCompileInputs.cache
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.dll
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.pdb
+C:\Users\f\source\repos\HomeTask\ConsoleApp\Course_managment_application\Course_managment_application\obj\Debug\netcoreapp3.1\Course_managment_application.genruntimeconfig.cache
