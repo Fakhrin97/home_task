@@ -31,6 +31,7 @@ namespace Course_managment_application.Models
                     No = $"S" + Count;
                     break;
                 default:
+                    Console.WriteLine("Something Is Wrong");
                     break;
             }
             Count++;

@@ -24,7 +24,7 @@ namespace Course_managment_application.Services
 
             foreach (Group item in Groups)
             {
-                if (item.No.ToUpper().Trim() != group.No.ToUpper().Trim())
+                if (group.No.ToUpper().Trim() != item.No.ToUpper().Trim())
                 {
                     _groups.Add(group);
                     return $"Created New Group{group.No.ToUpper().Trim()}";
@@ -90,9 +90,9 @@ namespace Course_managment_application.Services
         {
             if (Groups.Count>0)
             {
-
-
                 Group group = Find(no);
+                bool result = false;
+
                 if (group != null)
                 {
                     foreach (Student item in group.Students)
@@ -101,13 +101,12 @@ namespace Course_managment_application.Services
                         {
                             group.Students.Remove(item);
                             Console.WriteLine($"{item.FullName} was removed from the group");
+                            result= true;   
                             break;
                         }
-                        else
-                        {
-                            Console.WriteLine("Student do not found");
-                        }
+                        
                     }
+                    if (result) Console.WriteLine("Student Do Not Found");                   
                 }
                 else
                 {

@@ -12,17 +12,11 @@ namespace Course_managment_application
             bool result = false;
             do
             {
-                Console.WriteLine("1.Create a Group");
-                Console.WriteLine("2.Show Groups List");
-                Console.WriteLine("3.UpDate A Group ");
-                Console.WriteLine("4.Show a Student  in Group No");
-                Console.WriteLine("5.Show All Student In Course");
-                Console.WriteLine("6.Create a Student");
-                Console.WriteLine("7.Delete a Student");
-                Console.WriteLine("0.Exit ConsoleApp");
+                Menu();
 
                 result = byte.TryParse(Console.ReadLine(), out selection);
                 Console.Clear();
+
                 switch (selection)
                 {
                     case 1:
@@ -57,6 +51,17 @@ namespace Course_managment_application
             } while (selection != 0 || result == false);
 
 
+        }
+        public static void Menu()
+        {
+            Console.WriteLine("1.Create a Group");
+            Console.WriteLine("2.Show Groups List");
+            Console.WriteLine("3.UpDate A Group ");
+            Console.WriteLine("4.Show a Student  in Group No");
+            Console.WriteLine("5.Show All Student In Course");
+            Console.WriteLine("6.Create a Student");
+            Console.WriteLine("7.Delete a Student");
+            Console.WriteLine("0.Exit ConsoleApp");
         }
     }
 }

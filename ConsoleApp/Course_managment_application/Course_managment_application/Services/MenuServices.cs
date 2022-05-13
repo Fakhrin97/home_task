@@ -1,8 +1,6 @@
 ﻿using Course_managment_application.Enum;
 using Course_managment_application.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Course_managment_application.Services
 {
@@ -18,21 +16,23 @@ namespace Course_managment_application.Services
             {
                 Console.WriteLine("Choose one => T or F");
                 online = Console.ReadLine().ToUpper();
-                
 
-            } while (online!="F" && online!="T");
-            if (online=="F")isOnline = true;
-            
+            } while (online != "F" && online != "T");
+
+            if (online == "F") isOnline = false;
+            if (online == "T") isOnline = true;
 
 
             foreach (var item in System.Enum.GetValues(typeof(Categories)))
             {
                 Console.WriteLine($"{(int)item}.{item}");
             }
+
             object categories;
+            Console.Write("Choose Categoties:");
             bool isCategory = System.Enum.TryParse(typeof(Categories), Console.ReadLine(), out categories);
             Console.WriteLine(isCategory);
-            
+
             courseServices.CreateGroup(isOnline, (Categories)categories);
         }
         public static void ShowGroupMenu()
@@ -42,20 +42,20 @@ namespace Course_managment_application.Services
         public static void UpdateGroupMenu()
         {
             Console.WriteLine("Enter old No");
-            string oldNo =Console.ReadLine();
+            string oldNo = Console.ReadLine();
 
             Console.WriteLine("Enter New No");
             string newNo = Console.ReadLine();
 
-            courseServices.UpdateGroup(oldNo, newNo);   
+            courseServices.UpdateGroup(oldNo, newNo);
 
 
         }
         public static void ShowStudentsInGroupMenu()
         {
             Console.WriteLine("Enter Group No");
-            string groupNo=Console.ReadLine();
-             
+            string groupNo = Console.ReadLine();
+
             courseServices.ShowStudentsInGroup(groupNo);
         }
         public static void ShowAllStudentsMenu()
@@ -65,13 +65,25 @@ namespace Course_managment_application.Services
         public static void CreateStudentMenu()
         {
             Console.Write("Enter Student Full Name:");
-            string fullname =Console.ReadLine();
-            bool result = true;
+            string fullname = Console.ReadLine();
 
-            Student student = new Student(fullname,result);
+            Console.WriteLine("Student is Guaranteed or Without Warranty");
+            string online;
+            bool isOnline = false;
+            do
+            {
+                Console.WriteLine("Choose one => G or W");
+                online = Console.ReadLine().ToUpper();
+
+            } while (online != "G" && online != "W");
+
+            if (online == "G") isOnline = true;
+            if (online == "W") isOnline = false;
+
+            Student student = new Student(fullname, isOnline);
 
             Console.Write("Enter Group No:");
-            string groupno=Console.ReadLine();  
+            string groupno = Console.ReadLine();
 
             courseServices.CreateStudent(student, groupno);
 
@@ -83,10 +95,20 @@ namespace Course_managment_application.Services
             Console.Write("Enter Group No:");
             string groupNo = Console.ReadLine();
 
-            Console.Write("Enter Student Id:");
-            byte id=Convert.ToByte(Console.ReadLine());
+            
+            byte iD;
+            bool idResult=false;
 
-            courseServices.DeleteStudent(groupNo, id);
+            do
+            {
+                Console.Write("Enter Student Id Int Format:");
+                idResult = byte.TryParse(Console.ReadLine(), out iD);
+
+            } while (!idResult);
+
+
+
+            courseServices.DeleteStudent(groupNo, iD);
         }
     }
 }
