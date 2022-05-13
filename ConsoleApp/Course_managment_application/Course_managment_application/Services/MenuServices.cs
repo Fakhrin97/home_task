@@ -31,9 +31,16 @@ namespace Course_managment_application.Services
             object categories;
             Console.Write("Choose Categoties:");
             bool isCategory = System.Enum.TryParse(typeof(Categories), Console.ReadLine(), out categories);
-            Console.WriteLine(isCategory);
 
-            courseServices.CreateGroup(isOnline, (Categories)categories);
+            if (categories != null)
+            {
+                courseServices.CreateGroup(isOnline, (Categories)categories);
+            }
+            else
+            {
+                Console.WriteLine("Please Enter Correct Variant \n");
+            }
+
         }
         public static void ShowGroupMenu()
         {
@@ -95,9 +102,9 @@ namespace Course_managment_application.Services
             Console.Write("Enter Group No:");
             string groupNo = Console.ReadLine();
 
-            
+
             byte iD;
-            bool idResult=false;
+            bool idResult = false;
 
             do
             {

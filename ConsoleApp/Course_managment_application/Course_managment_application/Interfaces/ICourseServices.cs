@@ -9,7 +9,7 @@ namespace Course_managment_application.Interfaces
     internal interface ICourseServices
     {
         public List<Group> Groups { get; }
-        string CreateGroup(bool isonline, Categories categories);
+        void CreateGroup(bool isonline, Categories categories);
         void CreateStudent(Student student, string no);
         void DeleteStudent(string no, byte id);
         void ShowAllStudents();

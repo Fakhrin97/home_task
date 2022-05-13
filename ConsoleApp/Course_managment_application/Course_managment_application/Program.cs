@@ -7,7 +7,7 @@ namespace Course_managment_application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcomde Our Course");
+            Console.WriteLine("Welcomde Our Course \n");
             byte selection;
             bool result = false;
             do
