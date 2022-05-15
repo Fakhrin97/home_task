@@ -16,31 +16,28 @@ namespace Course_managment_application.Services
             Group group = new Group(isonline, categories);
             bool result = false;
 
-            if (group.No != null)
+            if (Groups.Count == 0)
             {
-                if (Groups.Count == 0)
-                {
-                    _groups.Add(group);
-                    Console.WriteLine($"Created New Group{group.No.ToUpper().Trim()}");
-                    result = true;
-                }
+                _groups.Add(group);
+                Console.WriteLine($"Created New Group {group.No.ToUpper().Trim()} Limit:{group.Limit}");
+                result = true;
+                return;
+            }
+            else
+            {
                 foreach (Group item in Groups)
                 {
-                    if (group.No.ToUpper().Trim() != item.No.ToUpper().Trim())
+                    if (group.No.ToUpper().Trim() != item.No.ToUpper().Trim()) 
                     {
-                        result = true;
-
                         _groups.Add(group);
-                        Console.WriteLine($"Created New Group{group.No.ToUpper().Trim()}");
+                        Console.WriteLine($"Created New Group {group.No.ToUpper().Trim()} Limit:{group.Limit} \n");
+                        result = true;  
+                        return;
                     }
                 }
+
             }
-
-            if (result) Console.WriteLine("There is another group with this name");
-
-
-
-
+            if (result == false) Console.WriteLine("Such a Group AllReady Exists");                   
 
         }
         public Group Find(string no)
@@ -55,8 +52,7 @@ namespace Course_managment_application.Services
 
         public void CreateStudent(Student student, string no)
         {
-            if (Groups.Count > 0)
-            {
+            
                 Group group = Find(no);
                 if (group == null)
                 {
@@ -65,39 +61,24 @@ namespace Course_managment_application.Services
                 }
                 else
                 {
-                    if (string.IsNullOrEmpty(student.FullName) || string.IsNullOrWhiteSpace(student.FullName))
+
+                    if (group.Students.Count < group.Limit)
                     {
-                        Console.WriteLine("Please Enter Full Name");
-                        return;
+                        group.Students.Add(student);
+                        Console.WriteLine($"Student successfully added {student}");
                     }
                     else
                     {
-                        if (group.Students.Count < group.Limit)
-                        {
-                            group.Students.Add(student);
-                            Console.WriteLine($"Student successfully added {student}");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Group Is Full");
-                        }
+                        Console.WriteLine("Group Is Full");
+
                     }
-
-                }
-
-            }
-            else
-            {
-                Console.WriteLine("A student cannot be created without a group");
-            }
-
+                }          
+          
 
         }
 
         public void DeleteStudent(string no, byte id)
         {
-            if (Groups.Count > 0)
-            {
                 Group group = Find(no);
                 bool result = false;
 
@@ -114,18 +95,14 @@ namespace Course_managment_application.Services
                         }
 
                     }
-                    if (result) Console.WriteLine("Student Do Not Found");
+                    if (!result) Console.WriteLine("Student Do Not Found");
                 }
                 else
                 {
                     Console.WriteLine($"There is no group with this name:{no.ToUpper()}");
                     ShowGroup();
                 }
-            }
-            else
-            {
-                Console.WriteLine("Not Yet Created Neither Group nor Student");
-            }
+           
         }
 
         public void ShowAllStudents()
@@ -136,7 +113,7 @@ namespace Course_managment_application.Services
                 {
                     foreach (Student student in item.Students)
                     {
-                        Console.WriteLine(student);
+                        Console.WriteLine($"{student} Group:{item.No}");
                     }
                 }
                 if (Student.Count == 0)
@@ -156,7 +133,7 @@ namespace Course_managment_application.Services
             {
                 foreach (Group item in Groups)
                 {
-                    Console.WriteLine(item); ;
+                    Console.WriteLine($"{item} The number of students in the group:{item.Students.Count}");
                 }
             }
             else
@@ -196,10 +173,7 @@ namespace Course_managment_application.Services
         }
 
         public void UpdateGroup(string oldNo, string newNo)
-        {
-            if (Groups.Count > 0)
-            {
-
+        {          
 
                 if (Find(newNo) == null)
                 {
@@ -220,11 +194,7 @@ namespace Course_managment_application.Services
                 {
                     Console.WriteLine($"There is already a group with this name:{newNo.ToUpper()}");
                 }
-            }
-            else
-            {
-                Console.WriteLine("Not Yet Craeted Group");
-            }
+          
         }
     }
 }

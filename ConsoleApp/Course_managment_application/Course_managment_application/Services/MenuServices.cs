@@ -9,9 +9,11 @@ namespace Course_managment_application.Services
         public static CourseServices courseServices = new CourseServices();
         public static void CreateGroupMenu()
         {
-            Console.WriteLine("Your Course Online or Ofline? T/F");
+            Console.WriteLine(" Your Course Online or Ofline? T/F");
+
             string online;
             bool isOnline = false;
+
             do
             {
                 Console.WriteLine("Choose one => T or F");
@@ -22,48 +24,89 @@ namespace Course_managment_application.Services
             if (online == "F") isOnline = false;
             if (online == "T") isOnline = true;
 
-
-            foreach (var item in System.Enum.GetValues(typeof(Categories)))
-            {
-                Console.WriteLine($"{(int)item}.{item}");
-            }
-
             object categories;
-            Console.Write("Choose Categoties:");
-            bool isCategory = System.Enum.TryParse(typeof(Categories), Console.ReadLine(), out categories);
+            bool isExistCategory;
 
-            if (categories != null)
+            do
             {
-                courseServices.CreateGroup(isOnline, (Categories)categories);
-            }
-            else
-            {
-                Console.WriteLine("Please Enter Correct Variant \n");
-            }
+                foreach (var item in System.Enum.GetValues(typeof(Categories)))
+                {
+                    Console.WriteLine($"{(int)item}.{item}");
+                }
 
+                Console.Write("\n Choose Categories:");
+
+                int.TryParse(Console.ReadLine(), out int categoryId);
+                System.Enum.TryParse(typeof(Categories), categoryId.ToString(), out categories);
+                isExistCategory = System.Enum.IsDefined(typeof(Categories), categoryId);
+                Console.WriteLine();
+
+                if (isExistCategory)
+                {
+                    courseServices.CreateGroup(isOnline, (Categories)categories);
+                }
+                else
+                {
+                    Console.WriteLine("Please Enter Correct Variant \n");
+                }
+            } while (!isExistCategory);
         }
         public static void ShowGroupMenu()
         {
             courseServices.ShowGroup();
         }
         public static void UpdateGroupMenu()
-        {
-            Console.WriteLine("Enter old No");
-            string oldNo = Console.ReadLine();
+        {           
+            
+            if (courseServices.Groups.Count > 0)
+            {
+                Console.WriteLine("Groups in Course");
 
-            Console.WriteLine("Enter New No");
-            string newNo = Console.ReadLine();
+                ShowGroupMenu();
 
-            courseServices.UpdateGroup(oldNo, newNo);
+                string oldNo;
+                do
+                {
+                    Console.WriteLine("Enter old No");
+                    oldNo = Console.ReadLine();
+
+                } while (string.IsNullOrEmpty(oldNo) && string.IsNullOrWhiteSpace(oldNo));
+
+                string newNo;
+                do
+                {
+                    
+                    Console.WriteLine("Enter New No");
+                    newNo = Console.ReadLine();
+
+                } while (string.IsNullOrEmpty(newNo) && string.IsNullOrWhiteSpace(newNo));
+
+                courseServices.UpdateGroup(oldNo, newNo);   
+
+            }
+            else
+            {
+                Console.WriteLine("Group do not Created Yet");
+            }
+
 
 
         }
         public static void ShowStudentsInGroupMenu()
         {
-            Console.WriteLine("Enter Group No");
-            string groupNo = Console.ReadLine();
+            if (Student.Count>0)
+            {                          
+                courseServices.ShowGroup();
 
-            courseServices.ShowStudentsInGroup(groupNo);
+                Console.WriteLine("Enter Group No");
+                string groupNo = Console.ReadLine();
+
+                courseServices.ShowStudentsInGroup(groupNo);
+            }
+            else
+            {
+                Console.WriteLine("Noy Yet Added Strudent");
+            }
         }
         public static void ShowAllStudentsMenu()
         {
@@ -71,51 +114,72 @@ namespace Course_managment_application.Services
         }
         public static void CreateStudentMenu()
         {
-            Console.Write("Enter Student Full Name:");
-            string fullname = Console.ReadLine();
-
-            Console.WriteLine("Student is Guaranteed or Without Warranty");
-            string online;
-            bool isOnline = false;
-            do
+            if (courseServices.Groups.Count > 0)
             {
-                Console.WriteLine("Choose one => G or W");
-                online = Console.ReadLine().ToUpper();
+                string fullname;
+                do
+                {
+                    Console.Write("Enter Student Full Name:");
+                     fullname = Console.ReadLine();
+                } while (string.IsNullOrEmpty(fullname) || string.IsNullOrWhiteSpace(fullname));
 
-            } while (online != "G" && online != "W");
+                Console.WriteLine("Student is Guaranteed or Without Warranty");
 
-            if (online == "G") isOnline = true;
-            if (online == "W") isOnline = false;
+                string online;
+                bool isOnline = false;
 
-            Student student = new Student(fullname, isOnline);
+                do
+                {
+                    Console.WriteLine("Choose one => G or W");
+                    online = Console.ReadLine().ToUpper();
 
-            Console.Write("Enter Group No:");
-            string groupno = Console.ReadLine();
+                } while (online != "G" && online != "W");
 
-            courseServices.CreateStudent(student, groupno);
+                if (online == "G") isOnline = true;
+                if (online == "W") isOnline = false;
+
+                Student student = new Student(fullname, isOnline);
+
+                ShowGroupMenu();
+
+                Console.Write("Enter Group No:");
+                string groupno = Console.ReadLine();
+
+                courseServices.CreateStudent(student, groupno);
+            }
+            else
+            {
+                Console.WriteLine("Not Yet Created Group");
+            }
 
 
 
         }
         public static void DeleteStudentMenu()
         {
-            Console.Write("Enter Group No:");
-            string groupNo = Console.ReadLine();
-
-
-            byte iD;
-            bool idResult = false;
-
-            do
+            if (Student.Count>0)
             {
-                Console.Write("Enter Student Id Int Format:");
-                idResult = byte.TryParse(Console.ReadLine(), out iD);
+                ShowAllStudentsMenu();
 
-            } while (!idResult);
+                Console.Write("Enter Group No:");
+                string groupNo = Console.ReadLine();
 
+                byte iD;
+                bool idResult = false;
 
+                do
+                {
+                    Console.Write("Enter Student Id Int Format:");
+                    idResult = byte.TryParse(Console.ReadLine(), out iD);
 
-            courseServices.DeleteStudent(groupNo, iD);
+                } while (!idResult);
+
+                courseServices.DeleteStudent(groupNo, iD);
+            }
+            else
+            {
+                Console.WriteLine("Not Yet Added Strudent");
+            }
         }
     }
 }

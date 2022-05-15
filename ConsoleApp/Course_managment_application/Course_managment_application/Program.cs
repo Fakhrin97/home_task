@@ -7,11 +7,14 @@ namespace Course_managment_application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcomde Our Course \n");
+            Console.WriteLine("Welcomde Our Course ");
+
             byte selection;
             bool result = false;
+
             do
             {
+                
                 Menu();
 
                 result = byte.TryParse(Console.ReadLine(), out selection);
@@ -40,12 +43,16 @@ namespace Course_managment_application
                     case 7:
                         MenuServices.DeleteStudentMenu();
                         break;
+                    case 0:
+                        Console.WriteLine("Code Academini Secdiyiniz Uzub Size Teshekkur Edirik!");
+                        break;
 
 
                     default:
                         Console.WriteLine("Something went wrong");
                         break;
                 }
+              
 
 
             } while (selection != 0 || result == false);
@@ -54,6 +61,7 @@ namespace Course_managment_application
         }
         public static void Menu()
         {
+            Console.WriteLine("*******************");
             Console.WriteLine("1.Create a Group");
             Console.WriteLine("2.Show Groups List");
             Console.WriteLine("3.UpDate A Group ");
