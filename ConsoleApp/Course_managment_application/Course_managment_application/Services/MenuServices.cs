@@ -13,7 +13,7 @@ namespace Course_managment_application.Services
 
             string online;
             bool isOnline = false;
-
+          
             do
             {
                 Console.WriteLine("Choose one => T or F");

@@ -42,6 +42,7 @@ namespace Course_managment_application.Services
         }
         public Group Find(string no)
         {
+       
             foreach (Group item in Groups)
             {
                 if (item.No.ToUpper().Trim() == no.ToUpper().Trim()) return item;
@@ -109,6 +110,10 @@ namespace Course_managment_application.Services
         {
             if (Groups.Count > 0)
             {
+                if (Student.Count == 0)
+                {
+                    Console.WriteLine("Not Yet Created Student");
+                }
                 foreach (Group item in Groups)
                 {
                     foreach (Student student in item.Students)
@@ -116,10 +121,7 @@ namespace Course_managment_application.Services
                         Console.WriteLine($"{student} Group:{item.No}");
                     }
                 }
-                if (Student.Count == 0)
-                {
-                    Console.WriteLine("Not Yet Created Student");
-                }
+              
             }
             else
             {

@@ -16,7 +16,7 @@ namespace Course_managment_application
             {
                 
                 Menu();
-
+                Console.Write("Choose One:");
                 result = byte.TryParse(Console.ReadLine(), out selection);
                 Console.Clear();
 
