@@ -1,0 +1,14 @@
+C:\Users\f\source\repos\MagazineChek\MagazineChek\bin\Debug\netcoreapp3.1\MagazineChek.exe
+C:\Users\f\source\repos\MagazineChek\MagazineChek\bin\Debug\netcoreapp3.1\MagazineChek.deps.json
+C:\Users\f\source\repos\MagazineChek\MagazineChek\bin\Debug\netcoreapp3.1\MagazineChek.runtimeconfig.json
+C:\Users\f\source\repos\MagazineChek\MagazineChek\bin\Debug\netcoreapp3.1\MagazineChek.runtimeconfig.dev.json
+C:\Users\f\source\repos\MagazineChek\MagazineChek\bin\Debug\netcoreapp3.1\MagazineChek.dll
+C:\Users\f\source\repos\MagazineChek\MagazineChek\bin\Debug\netcoreapp3.1\MagazineChek.pdb
+C:\Users\f\source\repos\MagazineChek\MagazineChek\obj\Debug\netcoreapp3.1\MagazineChek.csproj.AssemblyReference.cache
+C:\Users\f\source\repos\MagazineChek\MagazineChek\obj\Debug\netcoreapp3.1\MagazineChek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\f\source\repos\MagazineChek\MagazineChek\obj\Debug\netcoreapp3.1\MagazineChek.AssemblyInfoInputs.cache
+C:\Users\f\source\repos\MagazineChek\MagazineChek\obj\Debug\netcoreapp3.1\MagazineChek.AssemblyInfo.cs
+C:\Users\f\source\repos\MagazineChek\MagazineChek\obj\Debug\netcoreapp3.1\MagazineChek.csproj.CoreCompileInputs.cache
+C:\Users\f\source\repos\MagazineChek\MagazineChek\obj\Debug\netcoreapp3.1\MagazineChek.dll
+C:\Users\f\source\repos\MagazineChek\MagazineChek\obj\Debug\netcoreapp3.1\MagazineChek.pdb
+C:\Users\f\source\repos\MagazineChek\MagazineChek\obj\Debug\netcoreapp3.1\MagazineChek.genruntimeconfig.cache
